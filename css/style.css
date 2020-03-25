@@ -27,6 +27,7 @@ h1, h2, h3, h4 {
 h1{
   font-size: 2.75em;
   font-weight: 500;
+  text-align: center;
 }
 h2{
   font-size: 2.25em;
@@ -64,7 +65,7 @@ a:active{
 
 
 .button{
-  dispaly: inline-block;
+  display: inline-block;
   background-color: #FFFFFF;
   font-weight: 400;
   text-transform: uppercase;
@@ -91,6 +92,29 @@ header{
   text-align: center;
   padding: 10px 0;
 }
+
+main{
+  padding-top: 160px;
+}
+
+#hero{
+  background-color:#ffffff;
+  display: inline-block;
+  width:100%;
+}
+
+.container{
+  padding: 0 15px;
+}
+
+.row{
+  padding: 0 0 25px 0;
+  border-bottom:1px solid #466675;
+  margin: 25px 0;
+}
+
+
+
 .logo{
   max-width: 250px;
 }
