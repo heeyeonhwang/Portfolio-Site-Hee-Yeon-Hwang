@@ -71,3 +71,19 @@ a:active{
   background-color: #000000;
   color: #FFFFFF !important;
 }
+.icons{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.email,
+.linkedin{
+  max-width: 75px;
+  max-height: 75px;
+  margin: 10px 10px;
+}
+
+#title .description{
+  text-align: center;
+}
