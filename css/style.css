@@ -153,14 +153,14 @@ nav>ul>li>a {
   max-width: 250px;
 }
 
-.icons{
+.icons {
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
 .email,
-.linkedin{
+.linkedin {
   max-width: 75px;
   max-height: 75px;
   margin: 10px 10px;
@@ -179,6 +179,12 @@ nav>ul>li>a {
 #title .description {
   text-align: center;
 }
+
+#contact h4 {
+  text-align: center;
+}
+
+
 @keyframes color2{
   0% {fill:#FAC8BF;}
   50% {fill:#FB8974;}
