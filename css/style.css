@@ -154,3 +154,59 @@ nav>ul>li>a{
 #title .description{
   text-align: center;
 }
+@keyframes color2{
+  0% {fill:#FAC8BF;}
+  50% {fill:#FB8974;}
+  100% {fill:#F0FBD9;}
+}
+
+#circle{
+  animation: 4s color2 infinite alternate linear;
+}
+
+
+@keyframes move1{
+  0% {transform:translatey(0px);}
+  25% {transform: translatey(-15px)}
+  50% {transform:translatey(0px);}
+  75% {transform:translateY(15px);}
+  100% {transform:translatey(0px);}
+}
+
+
+#letterh1,
+#lettern7{
+  animation: 3s move1 infinite linear;
+}
+
+
+#lettere2,
+#letterh8{
+  animation: 3s move1 infinite linear;
+  animation-delay: 0.5s;
+}
+
+#lettere3,
+#letterw9{
+  animation: 3s move1 infinite linear;
+  animation-delay: 1s;
+}
+
+#lettery4,
+#lettera10{
+  animation: 3s move1 infinite linear;
+  animation-delay: 1.5s;
+}
+
+#lettere5,
+#lettern11{
+  animation: 3s move1 infinite linear;
+  animation-delay: 2s;
+}
+
+#lettero6,
+#letterg12{
+  animation: 3s move1 infinite linear;
+  animation-delay: 2.5s;
+}
+
