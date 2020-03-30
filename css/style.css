@@ -51,34 +51,46 @@ img{
 
 
 
-
-a{
-  color:#000000;
+a {
+  color: #466675;
   text-decoration: none;
+  transition: 0.2s opacity;
 }
+
 a:hover,
-a:focus
-a:active{
+a:focus,
+a:active {
   opacity: 0.75;
 }
 
 
-
-.button{
+.button {
   display: inline-block;
   background-color: #FFFFFF;
   font-weight: 400;
   text-transform: uppercase;
   padding: 10px;
   border: 2px solid #000000;
-  transition: 0.2s opacity;
+  transition: 0.2s color;
 }
-.button:hover{
+
+.button:hover {
   background-color: #000000;
   color: #FFFFFF !important;
 }
 
+.prototype{
+  color: #94FFFC !important;
+  font-weight: 500 !important;
+  text-align: center;
+  transition: 0.2s color;
+}
 
+.prototype:hover,
+.prototype:focus,
+.prototype:active {
+  color: #FAC8BF !important;
+}
 
 
 /* Layout Styling */
