@@ -193,8 +193,13 @@ nav>ul>li>a {
   100% {fill:#F0FBD9;}
 }
 
+@keyframes rotate-circle{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
 #circle{
-  animation: 4s color2 infinite alternate linear;
+  animation: 4s color2 infinite alternate linear, 4s rotate-circle infinite linear;
 }
 
 
