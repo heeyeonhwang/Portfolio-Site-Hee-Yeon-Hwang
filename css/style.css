@@ -103,12 +103,11 @@ header {
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.5);
   position: fixed;
   background-color: #ffffff;
-  text-align: center;
   padding: 10px 0;
 }
 
 main {
-  padding-top: 220px;
+  padding-top: 80px;
 }
 
 nav {
@@ -122,10 +121,7 @@ nav>ul {
   margin: 5px 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-  text-align: center;
-}
+
 
 nav>ul>li>a {
   padding: 0 20px;
@@ -152,7 +148,9 @@ nav>ul>li>a {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+  position: absolute;
+  left: 0;
 }
 
 .icons {
@@ -168,15 +166,39 @@ nav>ul>li>a {
   margin: 10px 10px;
 }
 
-.nav1 {
-  padding: 0px;
-  margin: 0px;
+
+.navtoggle li:not(:first-child) {
+  display: none;
 }
 
-.nav2 {
-  padding: 0px;
-  margin: 0px;
+.navtoggle .nav2 li:not(:last-child) {
+  display: none;
 }
+
+.navtoggle, .navtoggleresponsive {
+  position: relative;
+
+}
+
+.navtoggleresponsive li{
+  display:block;
+  text-align: right;
+  padding:10px 0;
+}
+
+.navtoggleresponsive .nav1 li:first-child{
+  font-size: 20px;
+  padding: 5px 0 0 0;
+}
+
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+}
+
 
 #title .description {
   text-align: center;
@@ -186,6 +208,8 @@ nav>ul>li>a {
   text-align: center;
 }
 
+
+/*Animation*/
 
 @keyframes color2{
   0% {fill:#FAC8BF;}
@@ -252,12 +276,19 @@ to{transform:rotate(360deg);}
 
 /*Breakpoints*/
 @media only screen and (min-width: 640px) {
+
+  header{
+    display: inline-block;
+    width: 100%;
+
+  }
+
   body {
     font-size: 18px;
   }
 
   main {
-    padding-top: 320px;
+    padding-top: 180px;
   }
 
   #contact {
@@ -269,21 +300,40 @@ to{transform:rotate(360deg);}
     text-align: center;
   }
 
+.navtoggle{
+  display: inline-block;
+  width:100%;
+  height: 150px;
+}
+
+
+
+.logo{
+  max-width: 400px;
+  position: absolute;
+  left: 0;
+
+}
+
+
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 37px;
+  font-size: 40px;
+}
+
+.navtoggleresponsive .nav1 li:first-child{
+  font-size: 40px;
+  padding: 34px 0 25px 0;
+}
+
+
 .container{
   padding: 0 30px;
 }
 
-  .nav1 {
-    width: auto;
-    float: left;
-    margin-left: 40px;
-  }
-
-  .nav2 {
-    width: auto;
-    float: right;
-    margin-right: 40px;
-  }
 
   .col-md-6 {
     width: 50%
@@ -324,6 +374,7 @@ to{transform:rotate(360deg);}
 
 @media only screen and (min-width: 1024px) {
   header {
+    text-align: center;
     position: relative;
     box-shadow: none;
   }
@@ -352,6 +403,28 @@ h2 {
 #bio img{
 
 }
+
+.logo{
+  position:relative;
+}
+
+nav>ul>li {
+  display: inline-block;
+  text-align: center;
+}
+
+.navtoggle li:not(:first-child) {
+display: inline-block;
+}
+
+.navtoggle .nav2 li:not(:last-child) {
+display: inline-block;
+}
+
+li:first-child{
+  display: none;
+}
+
 
   .container{
     padding: 0 75px;
