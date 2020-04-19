@@ -68,6 +68,7 @@ a:active {
 }
 
 
+
 .button {
   display: inline-block;
   background-color: #FFFFFF;
@@ -148,6 +149,12 @@ nav>ul>li>a {
   padding: 0 0 25px 0;
   border-bottom: 1px solid #466675;
   margin: 25px 0;
+}
+
+.row2{
+  padding: 0 0 25px 0;
+  margin: 25px 0;
+
 }
 
 .logo {
