@@ -129,6 +129,12 @@ nav>ul>li>a {
   color: #000000;
 }
 
+iframe{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
 #hero {
   background-color: #ffffff;
   display: inline-block;
