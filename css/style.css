@@ -414,6 +414,10 @@ h2 {
 
 }
 
+#projects li:first-child{
+  display: list-item;
+}
+
 .logo{
   position:relative;
 }
