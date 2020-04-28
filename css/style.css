@@ -84,18 +84,7 @@ a:active {
   color: #FFFFFF !important;
 }
 
-.prototype{
-  color: #94FFFC !important;
-  font-weight: 500 !important;
-  text-align: center;
-  transition: 0.2s color;
-}
 
-.prototype:hover,
-.prototype:focus,
-.prototype:active {
-  color: #FAC8BF !important;
-}
 
 
 
@@ -484,10 +473,6 @@ li:first-child{
   }
 }
 
-.persona h2{
-  display: inline-block;
-  margin-top: 20px;
-}
 
 @media only screen and (min-width: 1440px) {
   main {
