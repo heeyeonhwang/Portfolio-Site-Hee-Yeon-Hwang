@@ -84,19 +84,13 @@ a:active {
   color: #FFFFFF !important;
 }
 
-.prototype{
-  color: #94FFFC !important;
-  font-weight: 500 !important;
-  text-align: center;
-  transition: 0.2s color;
-}
 
-.prototype:hover,
-.prototype:focus,
-.prototype:active {
-  color: #FAC8BF !important;
-}
 
+.picture:hover,
+.picture:focus,
+.picture:active{
+  opacity: 1.0;
+}
 
 
 
@@ -133,6 +127,12 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 400;
   color: #000000;
+}
+
+iframe{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
 
 #hero {
@@ -414,6 +414,10 @@ h2 {
 
 }
 
+#projects li:first-child{
+  display: list-item;
+}
+
 .logo{
   position:relative;
 }
@@ -484,10 +488,6 @@ li:first-child{
   }
 }
 
-.persona h2{
-  display: inline-block;
-  margin-top: 20px;
-}
 
 @media only screen and (min-width: 1440px) {
   main {
