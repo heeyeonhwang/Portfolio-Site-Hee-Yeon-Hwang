@@ -1,4 +1,4 @@
-/*COLORS USED
+/* COLORS USED
   Background - white (#FFFFFF)
   Text - black (#000000)
   dark blue (#466675)
@@ -12,15 +12,18 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #fff;
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #000000;
+  color: #000;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -31,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.00em;
+  font-size: 2em;
   font-weight: 500;
   color: #466675;
 }
@@ -50,7 +53,7 @@ img {
   width: 100%;
 }
 
-b{
+b {
   font-size: 1.25em;
   color: #466675;
 }
@@ -67,40 +70,34 @@ a:active {
   opacity: 0.75;
 }
 
-
-
 .button {
   display: inline-block;
-  background-color: #FFFFFF;
-  font-weight: 400;
+  background-color: #fff;
+  font-weight: 500;
   text-transform: uppercase;
   padding: 10px;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   transition: 0.2s color;
 }
 
 .button:hover {
-  background-color: #000000;
-  color: #FFFFFF !important;
+  background-color: #000;
+  color: #fff !important;
 }
-
-
 
 .picture:hover,
 .picture:focus,
-.picture:active{
-  opacity: 1.0;
+.picture:active {
+  opacity: 1;
 }
-
-
 
 /* Layout Styling */
 header {
   display: inline-block;
   width: 100%;
-  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.5);
   position: fixed;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 10px 0;
 }
 
@@ -113,30 +110,34 @@ nav {
   width: 100%;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 5px 0;
 }
 
-
-
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 20px;
-  margin: 0 0;
+  margin: 0;
   text-transform: uppercase;
   font-weight: 400;
-  color: #000000;
+  color: #000;
 }
 
-iframe{
+iframe {
+  border: 0;
   display: inline-block;
   text-align: center;
   width: 100%;
 }
 
+#prototype {
+  display: block;
+  text-align: center;
+}
+
 #hero {
-  background-color: #ffffff;
+  background-color: #fff;
   display: inline-block;
   width: 100%;
 }
@@ -146,15 +147,14 @@ iframe{
 }
 
 .row {
-  padding: 0 0 25px 0;
+  padding: 0 0 25px;
   border-bottom: 1px solid #466675;
   margin: 25px 0;
 }
 
-.row2{
-  padding: 0 0 25px 0;
+.row2 {
+  padding: 0 0 25px;
   margin: 25px 0;
-
 }
 
 .logo {
@@ -173,9 +173,8 @@ iframe{
 .linkedin {
   max-width: 75px;
   max-height: 75px;
-  margin: 10px 10px;
+  margin: 10px;
 }
-
 
 .navtoggle li:not(:first-child) {
   display: none;
@@ -185,22 +184,21 @@ iframe{
   display: none;
 }
 
-.navtoggle, .navtoggleresponsive {
+.navtoggle,
+.navtoggleresponsive {
   position: relative;
-
 }
 
-.navtoggleresponsive li{
-  display:block;
+.navtoggleresponsive li {
+  display: block;
   text-align: right;
-  padding:10px 0;
+  padding: 10px 0;
 }
 
-.navtoggleresponsive .nav1 li:first-child{
+.navtoggleresponsive .nav1 li:first-child {
   font-size: 20px;
-  padding: 5px 0 0 0;
+  padding: 5px 0 0;
 }
-
 
 .navtoggle li .icon {
   position: absolute;
@@ -208,7 +206,6 @@ iframe{
   top: 10px;
   font-size: 20px;
 }
-
 
 #title .description {
   text-align: center;
@@ -218,79 +215,98 @@ iframe{
   text-align: center;
 }
 
+/* Animation */
+@keyframes color2 {
+  0% {
+    fill: #fac8bf;
+  }
 
-/*Animation*/
+  50% {
+    fill: #fb8974;
+  }
 
-@keyframes color2{
-  0% {fill:#FAC8BF;}
-  50% {fill:#FB8974;}
-  100% {fill:#F0FBD9;}
+  100% {
+    fill: #f0fbd9;
+  }
 }
 
-@keyframes rotate-circle{
-from{transform:rotate(0deg);}
-to{transform:rotate(360deg);}
+@keyframes rotate-circle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-#circle{
+#circle {
   transform-origin: 16.5% 48.8%;
   animation: 6s color2 infinite alternate linear, 4s rotate-circle infinite linear;
 }
 
+@keyframes move1 {
+  0% {
+    transform: translateY(0);
+  }
 
-@keyframes move1{
-  0% {transform:translatey(0px);}
-  25% {transform: translatey(-15px)}
-  50% {transform:translatey(0px);}
-  75% {transform:translateY(15px);}
-  100% {transform:translatey(0px);}
+  25% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
-
 #letterh1,
-#lettern7{
+#lettern7 {
   animation: 3s move1 infinite linear;
 }
 
-
 #lettere2,
-#letterh8{
+#letterh8 {
   animation: 3s move1 infinite linear;
   animation-delay: 0.5s;
 }
 
 #lettere3,
-#letterw9{
+#letterw9 {
   animation: 3s move1 infinite linear;
   animation-delay: 1s;
 }
 
 #lettery4,
-#lettera10{
+#lettera10 {
   animation: 3s move1 infinite linear;
   animation-delay: 1.5s;
 }
 
 #lettere5,
-#lettern11{
+#lettern11 {
   animation: 3s move1 infinite linear;
   animation-delay: 2s;
 }
 
 #lettero6,
-#letterg12{
+#letterg12 {
   animation: 3s move1 infinite linear;
   animation-delay: 2.5s;
 }
 
-
-/*Breakpoints*/
+/* Breakpoints */
 @media only screen and (min-width: 640px) {
-
-  header{
+  header {
     display: inline-block;
     width: 100%;
-
   }
 
   body {
@@ -310,43 +326,36 @@ to{transform:rotate(360deg);}
     text-align: center;
   }
 
-.navtoggle{
-  display: inline-block;
-  width:100%;
-  height: 150px;
-}
+  .navtoggle {
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+  }
 
+  .logo {
+    max-width: 400px;
+    position: absolute;
+    left: 0;
+  }
 
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 37px;
+    font-size: 40px;
+  }
 
-.logo{
-  max-width: 400px;
-  position: absolute;
-  left: 0;
+  .navtoggleresponsive .nav1 li:first-child {
+    font-size: 40px;
+    padding: 34px 0 25px;
+  }
 
-}
-
-
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 37px;
-  font-size: 40px;
-}
-
-.navtoggleresponsive .nav1 li:first-child{
-  font-size: 40px;
-  padding: 34px 0 25px 0;
-}
-
-
-.container{
-  padding: 0 30px;
-}
-
+  .container {
+    padding: 0 30px;
+  }
 
   .col-md-6 {
-    width: 50%
+    width: 50%;
   }
 
   .row::after {
@@ -361,26 +370,17 @@ to{transform:rotate(360deg);}
     margin: 0;
   }
 
-
-
-  #bio .button{
-    display: inline-block;
-    width: 40%;
+  #bio .button {
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .skills{
+  .skills {
     padding-left: 50px;
     padding-right: 50px;
   }
-
 }
-
-
-
-
-
-
 
 @media only screen and (min-width: 1024px) {
   header {
@@ -390,19 +390,19 @@ to{transform:rotate(360deg);}
   }
 
   main {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   #header img {
     width: 40%;
   }
 
-h1{
-  padding: 0 50px;
-  margin: 0 100 100 100;
-}
+  h1 {
+    padding: 0 50px;
+    margin: 0 0 50px;
+  }
 
-h2 {
+  h2 {
     margin-top: 0;
   }
 
@@ -410,52 +410,49 @@ h2 {
     margin-top: 0;
   }
 
-#bio img{
+  #projects li:first-child {
+    display: list-item;
+  }
 
-}
+  #research li:first-child {
+    display: list-item;
+  }
 
-#projects li:first-child{
-  display: list-item;
-}
+  .logo {
+    position: relative;
+  }
 
-.logo{
-  position:relative;
-}
+  nav > ul > li {
+    display: inline-block;
+    text-align: center;
+  }
 
-nav>ul>li {
-  display: inline-block;
-  text-align: center;
-}
+  .navtoggle li:not(:first-child) {
+    display: inline-block;
+  }
 
-.navtoggle li:not(:first-child) {
-display: inline-block;
-}
+  .navtoggle .nav2 li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle .nav2 li:not(:last-child) {
-display: inline-block;
-}
+  li:first-child {
+    display: none;
+  }
 
-li:first-child{
-  display: none;
-}
-
-
-  .container{
+  .container {
     padding: 0 75px;
   }
 
-  .skills{
+  .skills {
     padding-left: 150px;
     padding-right: 150px;
   }
-
 
   .nav1 {
     width: auto;
     float: left;
     margin: 40px 0;
   }
-
 
   .nav2 {
     width: auto;
@@ -464,7 +461,7 @@ li:first-child{
   }
 
   .col-lg-5 {
-    width: 40%
+    width: 40%;
   }
 
   .col-lg-6 {
@@ -472,7 +469,7 @@ li:first-child{
   }
 
   .col-lg-7 {
-    width: 60%
+    width: 60%;
   }
 
   .row::after {
@@ -488,22 +485,19 @@ li:first-child{
   }
 }
 
-
 @media only screen and (min-width: 1440px) {
   main {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
-  .container{
+  .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
 
-
-
   .col-xl-5 {
-    width: 40%
+    width: 40%;
   }
 
   .col-xl-6 {
@@ -511,7 +505,7 @@ li:first-child{
   }
 
   .col-xl-7 {
-    width: 60%
+    width: 60%;
   }
 
   .row::after {
@@ -525,5 +519,4 @@ li:first-child{
     padding: 0 10px;
     margin: 0;
   }
-
 }
