@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About -- Hee Yeon Hwang</title>
+  <title>Hee Yeon Hwang</title>
   <link href="img/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -48,63 +48,143 @@
 
   <main>
 
-    <!--Hero(?)-->
-    <div>
+    <!--Title-->
+    <div id="title">
       <div class="container">
-        <h1><span> Get to know me better. </span></h1>
+        <h1> Portfolio Development </h1>
+        <p class="description"> Front-end development for an online portfolio. </p>
       </div>
-    </div>
 
-    <!--Bio-->
-    <div id="bio">
+      <!--Info-->
       <div class="container">
         <div class="row">
-          <picture class="col-lg-6">
-            <source srcset="img/about/biopic@1x.jpg" media="(max-width:767px)">
-            <img src="img/about/biopic@2x.jpg" alt="Bio Picture">
-          </picture>
           <div class="col-lg-6">
-            <p>My name is Hee Yeon Hwang and I am a User Experience Designer with a strong background in psychology research. I started as a psychology lab manager at Washington University in St. Louis and managed a study on how people in their everyday lives manage their own emotions and how their emotions impact
-              their decisions. But within my role, I craved creativity and wanted to see quicker results of my labor in my career. Soon, I found my passion in user experience design.</p>
-            <p>With my new path in UX design and my skills in psychology research, I learned to focus on <b>design that evokes feelings and actions.</b> I want to create design that makes users feel satisfied and want to use again when using my
-              products. I also learned to prioritize the most important features. I <b>focus on the key functions of users’ needs</b> first before the visual elements of the design in my iterative process. I also understand the <b>foundation of front-end development skills</b> as a designer. I transfer my research experience and project
-              management skills to provide <b>user-centered designs</b> to users to solve their issues from their perspective.</p>
-              <p>I am currently seeking UX opportunities in the west coast and willing to relocate.</p>
-              <a href="files/Hwang_Hee_Yeon_Resume.pdf" target="_blank" class="button"> Resume </a>
+            <h2>1. The Challenge</h2>
+            <p>This portfolio website was a two month project for the CareerFoundry front-end development course for UX designers.
+              As a UX Designer, I needed a visual medium to present my designs to build a professional network. Through creating my own online portfolio, I wanted to highlight my UX and research skills as well as  showcase my foundational knowledge on front-end development.
+              The goal for this portfolio is to gain weekly traffic to my website and have people contact me through visiting my site.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <a href="img/portfolio/portfolio@2x.png" class="picture" data-fancybox="gallary" data-caption="Portfolio About Page">
+            <figure>
+            <picture>
+              <source srcset="img/portfolio/portfolio@1x.png" media="(max-width:767px)">
+              <img src="img/portfolio/portfolio@2x.png" alt="Portfolio About Page">
+            </picture>
+            <figcaption>Portfolio About Page</figcaption>
+          </figure>
+            </a>
           </div>
         </div>
-        <div class="row skills">
-          <h2>Skills & Tools</h2>
-          <div class="col-md-6">
-            <h3>Relevant Skills</h3>
-            <ul>
-              <li>A/B & Preference Testing</li>
-              <li>Affinity Diagrams</li>
-              <li>Competitive Analysis</li>
-              <li>Data Analysis</li>
-              <li>Frontend Development</li>
-              <li>User & Usability Research</li>
-              <li>Information Architecture</li>
-              <li>Prototyping</li>
-              <li>Wire-framing</li>
-            </ul>
+
+        <div class="row">
+          <div>
+            <h2>2. Responsive Design</h2>
+            <p>To showcase my portfolio on a website, I wanted a responsive design to have my website easily accessible in all screen sizes. So I started with a mobile-first approach, creating my layout with the smallest screen size and then adapting to larger screen sizes. To create this responsive design, I used HTML, CSS, and JavaScript.
+            </p>
+            <p>With the smaller screens the users would have to scroll through more content on  each page, so I wanted to provide a simple and noninvasive consistent navigation bar. The navigation bar for mobile devices was fixed at the top of the screen but consisted of a hamburger menu to keep the bar from taking up too much screen space.
+            </p>
           </div>
-          <div class="col-md-6">
-            <h3>Toolkit</h3>
-            <ul>
-              <li>AdobeXD</li>
-              <li>CSS</li>
-              <li>Figma</li>
-              <li>HTML</li>
-              <li>Javascript</li>
-              <li>R Programming</li>
-              <li>SPSS</li>
-            </ul>
+          <div>
+            <a href="img/portfolio/finalmockup@2x.png" class="picture" data-fancybox="gallary" data-caption="Portfolio Mobile Index Page Iterations">
+            <figure>
+            <picture>
+              <source srcset="img/portfolio/finalmockup@1x.png" media="(max-width:767px)">
+              <img src="img/portfolio/finalmockup@2x.png" alt="Portfolio Mobile Index Page Iterations">
+            </picture>
+            <figcaption>Portfolio Mobile Index Page Iterations</figcaption>
+          </figure>
+            </a>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>3. Lightbox</h2>
+            <p>In order to showcase my design, I wanted users to be able to look at the images closer and have the ability to zoom in. I added a lightbox JavaScript library to create a pop-up window overlay of the image, once you click on them. Users can zoom in and out with this overlay as well as scroll through the collection of images on the page.
+            </p>
+            <p>Click on the images on this page to try out the lightbox.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <a href="img/portfolio/lightbox@2x.png" class="picture" data-fancybox="gallary" data-caption="Lightbox Overlay for Ink Tank Page">
+            <figure>
+            <picture>
+              <source srcset="img/portfolio/lightbox@1x.png" media="(max-width:767px)">
+              <img src="img/portfolio/lightbox@2x.png" alt="Lightbox Overlay">
+            </picture>
+            <figcaption>Lightbox Overlay for Ink Tank Page</figcaption>
+          </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>4. Usability Testing</h2>
+            <p>Usability testing was conducted with five participants to test the portfolio website. The participants were asked to complete six tasks on their computer and the errors they encountered were measured by Jakob Nielson’s error severity rating scale. The main problem all the participants observed was the light color font for the link to the prototypes of the design projects. Since then, I changed the link into a button for better visibility.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <a href="img/portfolio/user_testing@2x.png" class="picture" data-fancybox="gallary" data-caption="Portfolio Website: Jacob Nielson's Error Severity Rating">
+            <figure>
+            <picture>
+              <source srcset="img/portfolio/user_testing@1x.png" media="(max-width:767px)">
+              <img src="img/portfolio/user_testing@2x.png" alt="Portfolio Website: Jacob Nielson's Error Severity Rating">
+            </picture>
+            <figcaption>Portfolio Website: Jacob Nielson's Error Severity Rating</figcaption>
+          </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>5. Accessibility & Code Quality</h2>
+            <p>Since the color of the font was an issue during the usability testing, I used the W3C Color Accessibility Check to pass the site with AA compliance. I also added captions on images for the projects pages.
+            </p>
+            <p>In order to ensure my code quality for the portfolio website, I used three different linters with Atom. The linters I used were W3C-Validation, Linter-stylelint, and Linter-JS-Standard. I fixed all the errors from the linters except for two errors that did not need to be fixed and warnings about the background colors. Lastly, I also performed cross-browser testing on Chrome, Firefox, Safari, Microsoft Edge, Android, and iPhone.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <a href="img/portfolio/code_quality@2x.png" class="picture" data-fancybox="gallary" data-caption="Linter Errors and Warnings">
+            <figure>
+            <picture>
+              <source srcset="img/portfolio/code_quality@1x.png" media="(max-width:767px)">
+              <img src="img/portfolio/code_quality@2x.png" alt="Linter Errors and Warnings">
+            </picture>
+            <figcaption>Linter Errors and Warnings</figcaption>
+          </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>6. Porftolio Website & Next Steps</h2>
+            <p> Please click on the gif to see the responsive design in action.
+            </p>
+            <p>The portfolio website presents responsive design through a fixed navigation bar on mobile screens and prioritizes my design skills through lightbox overlays for images.
+              I will regularly update my portfolio with my projects and the next steps would be to simplify my home page more and to provide a night mode on the website.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <a href="img/portfolio/responsive.gif" class="picture" data-fancybox="gallary" data-caption="Porftolio Website: Responsive Design">
+            <figure>
+            <picture>
+              <source srcset="img/portfolio/responsive.gif" media="(max-width:767px)">
+              <img src="img/portfolio/responsive.gif" alt="Porftolio Website: Responsive Design">
+            </picture>
+            <figcaption>Porftolio Website: Responsive Design</figcaption>
+          </figure>
+            </a>
+          </div>
+        </div>
+
+
       </div>
     </div>
-
   </main>
 
   <!--Footer-->

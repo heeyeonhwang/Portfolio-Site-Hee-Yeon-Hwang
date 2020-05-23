@@ -70,6 +70,12 @@ a:active {
   opacity: 0.75;
 }
 
+figcaption {
+  text-align: center;
+  color: #000;
+  font-size: 0.85em;
+}
+
 .button {
   display: inline-block;
   background-color: #fff;
@@ -135,6 +141,10 @@ nav > ul > li > a {
   width: 100%;
 }
 
+#hero h3 {
+  text-align: center;
+}
+
 .container {
   padding: 0 15px;
 }
@@ -163,7 +173,8 @@ nav > ul > li > a {
 }
 
 .email,
-.linkedin {
+.linkedin,
+.github {
   max-width: 75px;
   max-height: 75px;
   margin: 10px;
