@@ -169,7 +169,8 @@ nav > ul > li > a {
 }
 
 .email,
-.linkedin {
+.linkedin,
+.github {
   max-width: 75px;
   max-height: 75px;
   margin: 10px;
