@@ -141,6 +141,10 @@ nav > ul > li > a {
   width: 100%;
 }
 
+#hero h3 {
+  text-align: center;
+}
+
 .container {
   padding: 0 15px;
 }
