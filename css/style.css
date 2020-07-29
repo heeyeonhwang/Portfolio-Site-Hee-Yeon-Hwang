@@ -453,6 +453,15 @@ nav > ul > li > a {
     padding: 0 75px;
   }
 
+  .illustration{
+    text-align: center;
+  }
+
+  .illustration ul{
+    list-style-position: inside;
+  }
+
+
   .skills {
     padding-left: 150px;
     padding-right: 150px;
