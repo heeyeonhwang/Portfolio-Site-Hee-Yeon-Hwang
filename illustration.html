@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About -- Hee Yeon Hwang</title>
+  <title>Hee Yeon Hwang</title>
   <link href="img/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <script src="https://kit.fontawesome.com/1794903dba.js" crossorigin="anonymous"></script>
 </head>
+
+
 
 <body>
 
@@ -47,66 +49,91 @@
   </header>
 
   <main>
-
-    <!--Hero(?)-->
-    <div>
+    <!--Title-->
+    <div id="title">
       <div class="container">
-        <h1><span> Get to know me better. </span></h1>
+        <h1> Illustration & Animation </h1>
+        <p class="description"> A collection of vector illustrations and animations. </p>
       </div>
-    </div>
 
-    <!--Bio-->
-    <div id="bio">
+    <!--Info-->
       <div class="container">
+
+        <div style="display: none;" id="latte">
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_euyrM3.json" autoplay loop mode="normal"></lottie-player>
+        </div>
+
+        <div style="display: none;" id="dog">
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_ogoV6N.json" autoplay loop mode="normal"></lottie-player>
+        </div>
+
         <div class="row">
-          <picture class="col-lg-6">
-            <source srcset="img/about/biopic@1x.jpg" media="(max-width:767px)">
-            <img src="img/about/biopic@2x.jpg" alt="Bio Picture">
-          </picture>
-          <div class="col-lg-6">
-            <p>My name is Hee Yeon Hwang and I am a User Experience Designer with a strong background in psychology research. I started as a psychology lab manager at Washington University in St. Louis and managed a study on how people in their everyday lives manage their own emotions and how their emotions impact
-              their decisions. But within my role, I craved creativity and wanted to see quicker results of my labor in my career. Soon, I found my passion in user experience design.</p>
-            <p>With my new path in UX design and my skills in psychology research, I learned to focus on <b>design that evokes feelings and actions.</b> I want to create design that makes users feel satisfied and want to use again when using my
-              products. I also learned to prioritize the most important features. I <b>focus on the key functions of users’ needs</b> first before the visual elements of the design in my iterative process. I also understand the <b>foundation of front-end development skills</b> as a designer. I transfer my research experience and project
-              management skills to provide <b>user-centered designs</b> to users to solve their issues from their perspective.</p>
-              <p>I am currently seeking UX opportunities in the west coast and willing to relocate.</p>
-              <a href="files/Hwang_Hee_Yeon_Resume.pdf" target="_blank" class="button"> Resume </a>
+          <div>
+            <h2>Overview</h2>
+            <p>These two illustrations and animations were a week long project to build up and showcase my visual designs skills. The subjects I chose are a few of my favorite activities, enjoying a nice cup of matcha latte and spending time with my dog, Doo Yoo. As a UX Designer, I am able to utilize pixel perfect designs and animations to create visually-friendly and engaging experiences for my users. These designs were created by using Adobe Illustrator and After Effects.</p>
+          </div>
+          <div>
+            <div class="col-lg-6">
+              <a data-fancybox data-src="#latte" href="javascript:;" class="picture" data-fancybox="gallary" data-caption="Lavender Matcha Latte">
+              <figure>
+                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_euyrM3.json" autoplay loop mode="normal"></lottie-player>
+                <figcaption>Lavender Matcha Latte Animation</figcaption>
+              </figure>
+            </a>
+            </div>
+            <div class="col-lg-6">
+              <a data-fancybox data-src="#dog" href="javascript:;" class="picture" data-fancybox="gallary" data-caption="Dog Animation">
+              <figure>
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_ogoV6N.json" autoplay loop mode="normal"></lottie-player>
+                <figcaption>Dog Animation</figcaption>
+              </figure>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="row skills">
-          <h2>Skills & Tools</h2>
-          <div class="col-md-6">
-            <h3>Relevant Skills</h3>
-            <ul>
-              <li>A/B & Preference Testing</li>
-              <li>Affinity Diagrams</li>
-              <li>Competitive Analysis</li>
-              <li>Data Analysis</li>
-              <li>Frontend Development</li>
-              <li>User & Usability Research</li>
-              <li>Information Architecture</li>
-              <li>Prototyping</li>
-              <li>Wire-framing</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h3>Toolkit</h3>
-            <ul>
-              <li>Adobe XD</li>
-              <li>Illustrator</li>
-              <li>Photoshop</li>
-              <li>After Effects</li>
-              <li>Figma</li>
-              <li>HTML/CSS/Javascript</li>
-              <li>R Programming</li>
-              <li>SPSS</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
 
-  </main>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Lavender Matcha Latte</h2>
+              <p>The main challnge of creating for the lavender matcha latte was on the animation. I wanted to convey the lavender flowers floating around the matcha tea in a relaxing manner but also wanted to show the depth within the floating animation. The flowers would be covered by some of the tea and the milk with the waves of the floatation. I conveyed this realism by decreasing the opacity of the flowers whenever it floated towards south of the cup and increasing it when it floated  north.</p>
+            </div>
+            <div class="col-lg-6">
+              <a href="img/illustration/latte@2x.png" class="picture" data-fancybox="gallary" data-caption="Animation in After Effects">
+              <figure>
+              <picture>
+                <source srcset="img/illustration/latte@1x.png" media="(max-width:767px)">
+                <img src="img/illustration/latte@2x.png" alt="After Effects">
+              </picture>
+              <figcaption>Animation in After Effects</figcaption>
+            </figure>
+            </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>My Dog: Doo Yoo</h2>
+              <p>Doo Yoo is my maltipoo dog that has a hard time staying still for the camera. There were more challenges in using him as a subject with both illustration and animation aspects. For illustration, it took many drafts for both resemblence, hair, and color. For his many textures and color, I gave the illustration a grainy texture for shading to highlight his mixed features.</p>
+              <p>In the animation section, the challenge was the blinking of the eyes. The angle of each vector points were difficult to portray a natural shape for closing of his eyes and it took close attention to detail for the quick animation.</p>
+            </div>
+            <div class="col-lg-6">
+              <a href="img/illustration/dooyoo@2x.jpg" class="picture" data-fancybox="gallary" data-caption="Doo Yoo">
+              <figure>
+              <picture>
+                <source srcset="img/illustration/dooyoo@1x.jpg" media="(max-width:767px)">
+                <img src="img/illustration/dooyoo@2x.jpg" alt="Doo Yoo">
+              </picture>
+              <figcaption>Doo Yoo</figcaption>
+            </figure>
+            </a>
+            </div>
+        </div>
+
+
+      </div>
+    </main>
+
+
 
   <!--Footer-->
   <footer id="contact">
@@ -183,14 +210,10 @@
   </footer>
 
 
-
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@0.2.0/dist/lottie-player.js"></script>
   <script src="js/scripts.js"></script>
-
 
 </body>
 
