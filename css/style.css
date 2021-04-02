@@ -6,6 +6,10 @@
   gray (#CCCCCC)
   bright blue (#94FFFC)
   pink (#FAC8BF)
+
+  blue (#283a42)
+  dark blue ()
+  pink (#d1917b)
 */
 * {
   box-sizing: border-box;
@@ -36,7 +40,7 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: 500;
-  color: #466675;
+  color: #283a42;
 }
 
 h3 {
@@ -47,6 +51,8 @@ h3 {
 h4 {
   font-size: 1.25em;
   font-weight: 400;
+  text-align: center;
+  padding: 0 40px;
 }
 
 img {
@@ -54,20 +60,14 @@ img {
 }
 
 b {
-  font-size: 1.25em;
-  color: #466675;
+  font-weight: 500;
+  color: #283a42;
 }
 
 a {
-  color: #466675;
+  color: #283a42;
   text-decoration: none;
-  transition: 0.2s opacity;
-}
-
-a:hover,
-a:focus,
-a:active {
-  opacity: 0.75;
+  transition: 0.2s color;
 }
 
 figcaption {
@@ -87,12 +87,12 @@ lottie-player {
   font-weight: 500;
   text-transform: uppercase;
   padding: 10px;
-  border: 2px solid #000;
+  border: 2px solid #283a42;
   transition: 0.2s color;
 }
 
 .button:hover {
-  background-color: #000;
+  background-color: #283a42;
   color: #fff !important;
 }
 
@@ -152,17 +152,16 @@ nav > ul > li > a {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .row {
   padding: 0 0 25px;
-  border-bottom: 1px solid #466675;
+  border-bottom: 1px solid #283a42;
   margin: 25px 0;
 }
 
 .row2 {
-  padding: 0 0 25px;
   margin: 25px 0;
 }
 
@@ -225,93 +224,6 @@ nav > ul > li > a {
   text-align: center;
 }
 
-/* Animation */
-@keyframes color2 {
-  0% {
-    fill: #fac8bf;
-  }
-
-  50% {
-    fill: #fb8974;
-  }
-
-  100% {
-    fill: #f0fbd9;
-  }
-}
-
-@keyframes rotate-circle {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-#circle {
-  transform-origin: 16.5% 48.8%;
-  animation: 6s color2 infinite alternate linear, 4s rotate-circle infinite linear;
-}
-
-@keyframes move1 {
-  0% {
-    transform: translateY(0);
-  }
-
-  25% {
-    transform: translateY(-15px);
-  }
-
-  50% {
-    transform: translateY(0);
-  }
-
-  75% {
-    transform: translateY(15px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-#letterh1,
-#lettern7 {
-  animation: 3s move1 infinite linear;
-}
-
-#lettere2,
-#letterh8 {
-  animation: 3s move1 infinite linear;
-  animation-delay: 0.5s;
-}
-
-#lettere3,
-#letterw9 {
-  animation: 3s move1 infinite linear;
-  animation-delay: 1s;
-}
-
-#lettery4,
-#lettera10 {
-  animation: 3s move1 infinite linear;
-  animation-delay: 1.5s;
-}
-
-#lettere5,
-#lettern11 {
-  animation: 3s move1 infinite linear;
-  animation-delay: 2s;
-}
-
-#lettero6,
-#letterg12 {
-  animation: 3s move1 infinite linear;
-  animation-delay: 2.5s;
-}
-
 /* Breakpoints */
 @media only screen and (min-width: 640px) {
   header {
@@ -361,7 +273,7 @@ nav > ul > li > a {
   }
 
   .container {
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .col-md-6 {
@@ -392,7 +304,7 @@ nav > ul > li > a {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1100px) {
   header {
     text-align: center;
     position: relative;
@@ -437,6 +349,9 @@ nav > ul > li > a {
     display: list-item;
   }
 
+  #title li:first-child {
+    display: list-item;
+  }
 
   .logo {
     position: relative;
@@ -460,7 +375,7 @@ nav > ul > li > a {
   }
 
   .container {
-    padding: 0 75px;
+    padding: 0 140px;
   }
 
   .skills {
@@ -471,13 +386,13 @@ nav > ul > li > a {
   .nav1 {
     width: auto;
     float: left;
-    margin: 40px 0;
+    margin: 50px 0;
   }
 
   .nav2 {
     width: auto;
     float: right;
-    margin: 40px 0;
+    margin: 50px 0;
   }
 
   .col-lg-4{
@@ -494,6 +409,10 @@ nav > ul > li > a {
 
   .col-lg-7 {
     width: 60%;
+  }
+
+  .col-lg-12{
+    width: 100%;
   }
 
   .row::after {
@@ -534,6 +453,10 @@ nav > ul > li > a {
 
   .col-xl-7 {
     width: 60%;
+  }
+
+  .col-x1-12{
+    width: 100%;
   }
 
   .row::after {
