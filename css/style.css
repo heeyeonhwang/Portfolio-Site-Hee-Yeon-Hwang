@@ -44,23 +44,26 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.10em;
   font-weight: 400;
   text-align: center;
   padding: 0 40px;
 }
 
+
+
 img {
   width: 100%;
 }
 
+
 b {
-  font-weight: 500;
+  font-weight: 510;
   color: #283a42;
 }
 
@@ -68,6 +71,12 @@ a {
   color: #283a42;
   text-decoration: none;
   transition: 0.2s color;
+}
+
+figure{
+  margin-block-start: 0em;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
 }
 
 figcaption {
@@ -84,6 +93,10 @@ lottie-player {
 ul.center{
   list-style-position: inside;
   text-align: center;
+}
+
+ul.stats{
+  margin: 0 50px;
 }
 
 #title  img {
@@ -148,8 +161,9 @@ nav > ul > li > a {
   padding: 0 20px;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 400;
-  color: #000;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 500;
+  color: #283a42;
 }
 
 #prototype {
@@ -165,6 +179,30 @@ nav > ul > li > a {
 
 #hero h3 {
   text-align: center;
+}
+
+#study .previous{
+  color: #283a42;
+  display: none;
+  text-align: left;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.10em;
+  font-weight: 400;
+  padding: 0px 0px 80px 20px;
+}
+
+#study .next{
+  color: #283a42;
+  display: block;
+  text-align: right;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.10em;
+  font-weight: 400;
+  padding: 0px 20px 80px 0px;
+}
+
+#study svg{
+  margin: 0 10px;
 }
 
 .container {
@@ -264,14 +302,15 @@ nav > ul > li > a {
     text-align: center;
   }
 
+
   .navtoggle {
     display: inline-block;
     width: 100%;
-    height: 150px;
+    height: 80px;
   }
 
   .logo {
-    max-width: 400px;
+    max-width: 320px;
     position: absolute;
     left: 0;
   }
@@ -376,6 +415,10 @@ nav > ul > li > a {
     display: list-item;
   }
 
+  #study .previous{
+    display: block;
+  }
+
   .logo {
     position: relative;
   }
@@ -401,9 +444,13 @@ nav > ul > li > a {
     display: none;
   }
 
+
   .container {
-    padding: 0 140px;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
 
   .skills {
     padding-left: 150px;
