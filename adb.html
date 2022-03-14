@@ -8,7 +8,9 @@
   <link href="img/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Fira+Sans+Condensed&family=Gayathri:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <script src="https://kit.fontawesome.com/1794903dba.js" crossorigin="anonymous"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -169,10 +171,11 @@
             </a>
           </div>
           <div class="col-lg-12">
-            <picture>
-              <source srcset="img/adb/adb_user_problems@1x.png" media="(max-width:767px)">
-              <img class="flat" src="img/adb/adb_user_problems@2x.png" alt="User Problems - 1) Cluttered user interface. 60% of users found colors, fonts, and layouts hard to read and gather information on one page. 2) Rigid information display options. 80% of users said any information that is shown, such as date range, flight types, and notes, can not be changed. 3) Limited access. 40% of users were frustrated that users get logged out every 24 hours from the software and have to keep logging back in.">
-            </picture>
+            <ul class="stats">
+              <p><li><b>60% of the users reported cluttered User Interface.</b><div></div>Colors, fonts, and layouts were hard to read and gather information in one page.</li></p>
+              <p><li><b>80% of the users reported rigid information display options.</b><div></div>Any of the information shown, such as date range, flight type, and notes, were not able to be changed.</li></p>
+              <p><li><b>40% of the users reported limited access.</b><div></div>All users were logged out every 24 hours from the software and had to keep logging back in.</li></p>
+            </ul>
           </div>
         </div>
 
@@ -249,25 +252,6 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Animations</h2>
-          </div>
-          <div class="col-lg-12">
-            <a href="img/adb/adb_animation.gif" class="picture" data-fancybox="gallary" data-caption="Transition Animation for Next Page">
-            <figure>
-            <picture>
-              <source srcset="img/adb/adb_animation.gif" media="(max-width:767px)">
-              <img src="img/adb/adb_animation.gif" alt="Transition Animation for Next Page">
-            </picture>
-            <figcaption>Transition Animation for Next Page</figcaption>
-          </figure>
-          </a>
-          </div>
-          <div class="col-lg-12">
-            <p>Since the Arrival and Departure Board was transitioning from a static page to a customizable page, I wanted to also <b>animate the board updating in real-time, inspired by the analog arrival and departure boards</b>.</p>
-          </div>
-        </div>
 
         <div class="row">
           <div class="col-lg-12">
@@ -305,15 +289,37 @@
             <h2>Results</h2>
           </div>
           <div class="col-lg-12">
-            <picture>
-              <source srcset="img/adb/adb_results@1x.png" media="(max-width:767px)">
-              <img class="flat" src="img/adb/adb_results@2x.png" alt="Results - 1) 83% of the users found the new colors, fonts, and layouts improved readability. 2) 100% of the users liked the new customization in the Settings Page. 3) 100% of the users enjoyed the transition animations for information updates.">
-            </picture>
+            <ul class="stats">
+              <p><li><b>83% of the users found the new colors, fonts, and layouts improved readability.</b></li></p>
+              <p><li><b>100% of the users liked the new customization of multiple arrival and departure boards.</b></li></p>
+              <p><li><b>67% of the users liked the control of security settings.</b></li></p>
+            </ul>
           </div>
           <div class="col-lg-12">
             <p>After discussing the results with the team and stakeholders, there were <b>only minor changes</b> such as creating an onboarding experience and changing the names of categories. Overall, the users found all the tasks easy to complete and there were <b>no catastrophic usability errors</b>.</p>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Animations</h2>
+          </div>
+          <div class="col-lg-12">
+            <a href="img/adb/adb_animation.gif" class="picture" data-fancybox="gallary" data-caption="Transition Animation for Next Page">
+            <figure>
+            <picture>
+              <source srcset="img/adb/adb_animation.gif" media="(max-width:767px)">
+              <img src="img/adb/adb_animation.gif" alt="Transition Animation for Next Page">
+            </picture>
+            <figcaption>Transition Animation for Next Page</figcaption>
+          </figure>
+          </a>
+          </div>
+          <div class="col-lg-12">
+            <p>Since the Arrival and Departure Board was transitioning from a static page to a customizable page, I wanted to also <b>animate the board updating in real-time, inspired by the analog arrival and departure boards</b>.</p>
+          </div>
+        </div>
+        
 
         <div class="row2">
           <div class="col-lg-12">
@@ -429,6 +435,26 @@
       </div>
     </div>
   </main>
+
+  <!--Next Studies-->
+  <study id="study">
+    <div class="container">
+    <div class="col-lg-6">
+      <a href="illustration.html" class="previous">
+        <svg width= "8px" height ="16px" fill="#283a42" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"/></svg>
+        Illustrations and Animations
+      </a>
+    </div>
+    <div class="col-lg-6">
+      <a href="inktank.html" class="next">
+        Ink Tank
+        <svg width= "8px" height ="16px" fill="#283a42" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"/></svg>
+      </a>
+    </div>
+    </div>
+  </study>
+
+
 
   <!--Footer-->
   <footer id="contact">
